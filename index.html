@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calcul IMC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+
+  <main class="card">
+    <header>
+      <h1>Calcul <span>IMC</span></h1>
+      <p class="subtitle">La balance ment parfois. Nous, jamais.</p>
+    </header>
+
+    <form id="form" autocomplete="off">
+      <div class="field">
+        <label for="poids">Poids</label>
+        <div class="input-wrap">
+          <input id="poids" type="number" inputmode="decimal" min="20" max="400" step="0.1" placeholder="70" required>
+          <span class="unit">kg</span>
+        </div>
+      </div>
+      <div class="field">
+        <label for="taille">Taille</label>
+        <div class="input-wrap">
+          <input id="taille" type="number" inputmode="decimal" min="80" max="260" step="0.1" placeholder="175" required>
+          <span class="unit">cm</span>
+        </div>
+      </div>
+      <button type="submit">Juger mon corps</button>
+    </form>
+
+    <section id="result" class="result hidden" aria-live="polite">
+      <div class="score">
+        <span id="imc-value" class="imc-value">0</span>
+        <span id="imc-label" class="imc-label"></span>
+      </div>
+
+      <div class="gauge">
+        <div class="gauge-bar"></div>
+        <div id="marker" class="marker"></div>
+        <div class="gauge-ticks">
+          <span>15</span><span>18.5</span><span>25</span><span>30</span><span>35</span><span>40</span>
+        </div>
+      </div>
+
+      <blockquote id="comment" class="comment"></blockquote>
+      <p id="ideal" class="ideal"></p>
+
+      <button id="again" class="ghost" type="button">Une autre insulte</button>
+    </section>
+
+    <footer>
+      L'IMC ne distingue pas le muscle de la graisse. Ce site ne distingue pas l'humour de la méchanceté.
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
