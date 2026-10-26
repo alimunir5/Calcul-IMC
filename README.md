@@ -2,6 +2,8 @@
 
 App qui permet de calculer ton IMC... et de te faire juger au passage.
 
+**👉 [Essayer l'app](https://alimunir5.github.io/Calcul-IMC/)**
+
 Entre ton poids et ta taille : l'app calcule ton Indice de Masse Corporelle, te place sur une jauge, te donne la fourchette de poids « normal » pour ta taille et t'envoie un commentaire d'humour noir adapté à ta tranche.
 
 ## Lancer l'app
