@@ -1,6 +1,6 @@
 # Calcul IMC
 
-App qui permet de calculer ton IMC... et de te faire juger au passage.
+Pour calculer ton IMC... et te faire juger au passage, cette petite app web en HTML, CSS et JavaScript situe ton résultat selon les tranches de l'OMS et l'accompagne d'un commentaire d'humour noir.
 
 **👉 [Essayer l'app](https://alimunir5.github.io/Calcul-IMC/)**
 
